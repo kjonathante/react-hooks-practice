@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
 
 import User from "./components/User";
+import GitHubUsers from "./components/GitHubUsers";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
       <User />
+      <GitHubUsers />
     </div>
   );
 }
